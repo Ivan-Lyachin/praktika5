@@ -5,7 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script defer src="/O test.js"></script>
   </head>
-  <body></body>
+  <body>
+    <script>
+      const myObject1 = {
+        key1: true,
+        key5: 10,
+        key3: "abc",
+        key4: null,
+        key10: NaN,
+      };
+      for (const x in myObject1) {
+        if (x === "key1" || x === "key3") {
+          console.log(myObject1[x]);
+        }
+      }
+    </script>
+  </body>
 </html>
